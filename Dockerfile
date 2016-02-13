@@ -3,6 +3,8 @@
 # Conjur UI plugins
 #
 
-FROM ubuntu:14.04
+FROM centos:7 
+
+RUN yum -y install ruby ruby-devel ruby-gems gcc gcc-c++ git openssl openssl-devel
 
 
