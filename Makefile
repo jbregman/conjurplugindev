@@ -1,3 +1,5 @@
+include env_make
+
 NS = jbregman
 VERSION ?= 4.29 
 
