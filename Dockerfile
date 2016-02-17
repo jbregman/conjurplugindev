@@ -9,6 +9,6 @@ RUN yum -y install ruby ruby-devel ruby-gems gcc gcc-c++ git openssl openssl-dev
 RUN gem install conjur-cli
 
 COPY conjur_init.sh conjur_init.sh
-ENTRYPOINT chmod a+x conjur_init.sh && \
-           ./conjur_init.sh
+RUN chmod a+x conjur_init.sh
+ENTRYPOINT  ./conjur_init.sh
 
